@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <title>App de Orçamentos - JSM Redes</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  
+  <div class="container">
+    <h1>Orçamento</h1>
+    <form id="form-orcamento">
+      <input type="text" id="nome" placeholder="Nome completo" required />
+      <input type="text" id="endereco" placeholder="Endereço" required />
+      <input type="text" id="tipo" placeholder="Tipo de serviço" required />
+      <textarea id="descricao" placeholder="Descrição do serviço"></textarea>
+      <input type="text" id="valor" placeholder="Valor" />
+      <input type="text" id="pagamento" placeholder="Forma de pagamento" />
+      <input type="text" id="garantia" placeholder="Tempo de garantia" />
+      <textarea id="observacoes" placeholder="Observações adicionais"></textarea>
+      <button type="submit">Salvar Orçamento</button>
+    </form>
+
+    <h2>Orçamentos Salvos</h2>
+    <div id="lista-orcamentos"></div>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+</html>
+
+
+
+
