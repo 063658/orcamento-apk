@@ -1,18 +1,30 @@
-body {
-  font-family: Arial, sans-serif;
-  background: #f2f2f2;
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+body {
+  font-family: Arial, sans-serif;
+  background: #f2f2f2;
+  overflow-x: hidden;
+}
+
 .container {
-  max-width: 600px;
-  margin: auto;
+  max-width: 100%;
+  width: 100%;
+  max-width: 500px;
+  margin: 20px auto;
   background: white;
-  padding: 20px;
-  margin-top: 20px;
+  padding: 15px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  text-align: center;
 }
 
 input,
@@ -42,11 +54,18 @@ button:hover {
   padding: 10px;
   border-radius: 5px;
   margin-top: 10px;
+  font-size: 14px;
 }
 
 .orcamento button {
   margin-top: 5px;
+  width: 48%;
   background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 8px;
+  border-radius: 5px;
+  margin-right: 4%;
 }
 
 .orcamento button.editar {

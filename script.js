@@ -7,9 +7,6 @@ function salvarOrcamento(event) {
     tipo: document.getElementById('tipo').value,
     descricao: document.getElementById('descricao').value,
     valor: document.getElementById('valor').value,
-    pagamento: document.getElementById('pagamento').value,
-    garantia: document.getElementById('garantia').value,
-    observacoes: document.getElementById('observacoes').value,
     id: Date.now()
   };
 
@@ -35,9 +32,6 @@ function mostrarOrcamentos() {
       <p><strong>Tipo:</strong> ${o.tipo}</p>
       <p><strong>Descrição:</strong> ${o.descricao}</p>
       <p><strong>Valor:</strong> ${o.valor}</p>
-      <p><strong>Pagamento:</strong> ${o.pagamento}</p>
-      <p><strong>Garantia:</strong> ${o.garantia}</p>
-      <p><strong>Obs:</strong> ${o.observacoes}</p>
       <button onclick="excluirOrcamento(${o.id})">Excluir</button>
       <button class="editar" onclick="editarOrcamento(${o.id})">Editar</button>
     `;
@@ -62,9 +56,6 @@ function editarOrcamento(id) {
     document.getElementById('tipo').value = orcamento.tipo;
     document.getElementById('descricao').value = orcamento.descricao;
     document.getElementById('valor').value = orcamento.valor;
-    document.getElementById('pagamento').value = orcamento.pagamento;
-    document.getElementById('garantia').value = orcamento.garantia;
-    document.getElementById('observacoes').value = orcamento.observacoes;
 
     excluirOrcamento(id);
   }
