@@ -1,77 +1,47 @@
-* {
-  box-sizing: border-box;
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
   margin: 0;
   padding: 0;
 }
-
-body {
-  font-family: Arial, sans-serif;
-  background: #f2f2f2;
-  overflow-x: hidden;
-}
-
 .container {
-  max-width: 100%;
-  width: 100%;
-  max-width: 500px;
-  margin: 20px auto;
+  max-width: 600px;
+  margin: auto;
+  padding: 1rem;
   background: white;
-  padding: 15px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  margin-top: 20px;
+  border-radius: 8px;
 }
-
-h1, h2 {
-  font-size: 20px;
-  margin-bottom: 10px;
-  text-align: center;
-}
-
-input,
-textarea,
-button {
+input, textarea, button {
   width: 100%;
-  margin-top: 10px;
-  padding: 10px;
-  border-radius: 5px;
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  font-size: 1rem;
   border: 1px solid #ccc;
-  font-size: 16px;
+  border-radius: 4px;
 }
-
 button {
-  background-color: #28a745;
-  color: white;
-  cursor: pointer;
-  font-weight: bold;
-}
-
-button:hover {
-  background-color: #218838;
-}
-
-.orcamento {
-  background: #e9ecef;
-  padding: 10px;
-  border-radius: 5px;
-  margin-top: 10px;
-  font-size: 14px;
-}
-
-.orcamento button {
-  margin-top: 5px;
-  width: 48%;
-  background-color: #dc3545;
+  background-color: #4CAF50;
   color: white;
   border: none;
-  padding: 8px;
-  border-radius: 5px;
-  margin-right: 4%;
+  margin-top: 1rem;
+  cursor: pointer;
 }
-
-.orcamento button.editar {
-  background-color: #007bff;
+button.editar {
+  background-color: #2196F3;
+  margin-top: 0.5rem;
 }
-
-.orcamento button:hover {
-  opacity: 0.9;
+.orcamento {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 6px;
+  background-color: #f9f9f9;
+}
+.orcamento-visualizar {
+  background: #fff;
+  padding: 1rem;
+  margin-top: 1rem;
+  border: 1px solid #ccc;
 }
